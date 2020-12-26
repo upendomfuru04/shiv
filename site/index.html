@@ -1,287 +1,317 @@
 <!DOCTYPE html>
-<html lang="en" class="html">
+<html>
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewpoint" content="width=divice-width"/>
-  <meta http-equiv="X-UA-compatable" content="ie-edge"/>
-  <meta name="description" content="made for books"/>
-  <meta name="keywords" content="app, seo, web positioning"/>
-  <meta name="author" content="Upendomyfair"/>
-  <title>myfair</title>
-  <link rel="stylesheet/t" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-  <link href="https://fonts.googlepis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width,intial-scale=1.0">
+  <title>my web</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="shortcut icone" href="image/fav-icon.png">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
-<body class="body" id="body-soomth">
-<style>
- .html{
-  scroll-behavior: smooth;
-  overflow-y: scroll;
- } 
- .body{
-  font-family: sans-serif, Arial;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  background: #0a0a0a;
- }
+<style type="text/css">
+  @charset "utf-8";
 
- .main-cont{
-  background-size: cover;
-  padding-top: 22px;
-  z-index: 3;
- }
+  body{
+    margin: 0px;
+    padding: 0px;
+    font-family: pippins;
+    scroll-behavior: smooth;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  ul{
+    list-style: none;
 
- .cont{
-  max-width: 1167px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  overflow: hidden;
-  height: 100%;
- }
-
- .header{
+  }
+  a{
+    text-decoration: none;
+  }
+  #main{
+    width: 100%;
+    height:100vh;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: #ffffff;
+  }
+  .logo {
+    font-size: 45px;
+  }
+  nav ul{
+    display: flex;
+  }
+  nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #d6bd70;
+    letter-spacing: 1px;
+  }
+  .hey{
+    color: #39bfbd;
+    font-weight: 500;
+    font-size:0.9rem;
+    border-bottom: 2px solid #40c6c4;
+  }
+  nav ul li a:hover{
+    background-color: #d6bd60;
+    color: #ffffff;
+    box-shadow:5px 10px 30px rgba(64,198,196,0.3); 
+    transition: all ease;
+  }
+  .model img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .model{
+    width: 400px;
+    height: 400px;
+  }
+  .content{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute; 
+    left: 350px;
+    top: 205px;
+    transform:translate(-50%,-50%); 
+  }
+  .main-text{
+    width: 400px;
+  }
+  .main-text h1{
+    font-size: 2.5rem;
+    color: #d6bd60;
+    margin: 0px 0px 10px 0px;
+    line-height: 50px;
+  }
+  .main-text p{
+    color: #d6bd60;
+  }
+  .portfolio-btn,
+  .client-box a{
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color:#d6bd60;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px(24,139,119,0.2);
+  }
+  .portfolio-btn:hover,
+  .client-box a:hover{
+    background-color: #d6bd60;
+    transition:all ease 0.2s;
+  }
+  .client-heading span{
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+  }
+  .client-heading h3,
+  #contact h3{
+    color: #d6bd60;
+     font-size: 3rem;
+     margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;  
+  }
+  #client{
+    width:100%
+    border-top:1px solid rgba(58,58,58,0.03); 
+    border-bottom:1px solid rgba(58,58,58,0.03); 
+    padding: 50px 0px;
+    background-image: url();
+    background-position: center;
+    background-size: 10000px;
+  }
+  .client-heading{
   display: flex;
-  justify-content: space-between;
-  height: 57px;
-  width: 100%
-  position:fixed;
-  z-index: 99;
- }
-
-#nav-bar{
-  display: block;
-  position: relative;
-  top: 18.99px;
-  left: 30px;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  user-select: none;
-  z-index: 1;
-}
-
-.header_checkbox{
-  display: block;
-  width: 40px;
-  height: 32px;
-  line-height: 57px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 0;
-  -webkit-touch-callout:none;
-}
-
-.nav-bar_spinner{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  border-radius: 1px;
-  -webkit-transform-origin:4px 0px;
-  -moz-transform-origin:4px 0px;
-  background:#f5f5f5;
-  -web-transition:background 0.5s cubic-bezier(0,77,0.2,0.05,1.0),
-                  -web-transform 0.5s cubic-bezier(0,77,0.2,0.05,1.0),
-                  opacity 0.55s ease;
-  transition: background 0.5s cubic-bezier(0,77,0.2,0.05,1.0), transform 0.5s cubic-bezier(0,77,0.2,0.05,1.0), opacity 0.55s ease;
-  z-index: 1;
-}
-
-.nav-bar_spinner:first-child{
- -webkit-transform-origin:0% 0%;
-  -moz-transform-origin:0% 0%;
-  transform-origin:0% 0%;   
-}
-
-.nav-bar_spinner:nth-last-child(2{
- -webkit-transform-origin:0% 100%;
-  -moz-transform-origin:0% 100%;
-  transform-origin:0% 100%;   
-}
-
-.header__checkbox:checked ~ .nav-bar__spinner{
-  opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-  -moz-transform: rotate(45deg) translate(-2px, -1px);
-  transform: rotate(45deg) translate(-2px, -1px);
-  background:#f5f5f5;
-}
-
-.header__checkbox:checked ~ .nav-bar__spinner:nth-last-child(3){
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-  -moz-transform: rotate(0deg) scale(0.2, 0.2);
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.header__checkbox:checked ~ .nav-bar__spinner:nth-last-child(2){
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-  -moz-transform: rotate(-45deg) translate(0, -1px);
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-.menu{
-  position: absolute;
-  width: 232px;
-  height: 100vh;
-  margin: -100px 0 0 -50px;
-  padding: 40px;
-  padding-left: 80px;
-  padding-top: 100px;
-  list-style-type: none;
-  -webkit-transform-origin: 0% 0%;
-  -moz-transform-origin: 0% 0%;
-  transform-origin: 0% 0%;
-  -webkit-transform: translate(-100%, 0);
-  -moz-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  -moz-transition: -moz-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  background: url(https://i.ibb.co/88mwdYK/img-13.png) #000 no-repeat;
-}
-
-.header__checkbox:checked ~ .menu{
-  -webkit-transform: none;
-  -moz-transform: none;
-  transform: none;
-}
-
-.menu__item{
-  font-family: sans-serif;
-  text-align: right;
-  -webkit-box-align: center;
+  justify-content:center; 
   align-items: center;
-  padding: 1rem 0;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  transition: all .4s;
-}
+  flex-direction: column;  
+  }
+  .c-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0; 
+  }
+  .client-box{
+    width: 310px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.08);
+  }
+  .client-box img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%
+    object-fit:cover;
+  }
+  .client-box strong{
+    color: #d6bd60;
+    margin: 0px;
+    font-size: 1.1rem;
+    font-weight:600
+    margin10px; 
+  }
+  .star{
+    display: flex;
+    margin: 10px 0px 10px 0px;
+  }
+  .star i{
+    color: #ff9529;   
+  }
+  .client-box p{
+    color: #747474;
+    font-size: 0.9rem;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .client-box a{
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 0px;
+  }
+  .client-box:hover{
+    transform: translate(-10px);
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.1);
+    transition: all ease 0.2s
+  }
+  #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+  }
+  #contact h3{
+    font-size: 
+  }
+  #contact img{
+    height: 300px;
+  }
+  .contact-input{
 
-.menu__link{
-  text-decoration: none;
-  color:#cdcdcd;
-}
-
-.menu__link:hover{
-  color: #9c9c9c; 
-  cursor: pointer;
-}
-
-.logo{
-  height:50px;
-  width:50px;
-  padding-top: 0;
-  margin-right: 20px;
-} 
-
-.logo__main{
-  height:57px;
-  width:49px;
-} 
-
-.main-title{
-  padding-bottom: 158px;
-  color: #fff;
-  max-width: 549px;
-  padding-left: 20px;
-  margin-top: 170px;
-  overflow: hidden;
-}
-
-.main-title__h1{
-  font-family: 'Audiowide', cursive;
-  font-size: 52px;
-  margin: 0;
-  font-weight: 500;
-  line-height: 1.33;
-  font-style: normal;
-  margin-bottom: 10px;
-  color:#fff;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-}
-
-.main-title__paragraph{
-  font-size: 18px;
-  line-height: 1.33;
-  font-weight: 300;
-  font-style: normal;
-  margin-bottom: 40px;
-  max-width: 380px;
-}
-
-.button{
-  border-radius: 3px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: normal;
-  font-style: normal;
-  text-align: center;
-  width: 179px;
-  text-transform: uppercase;
-  height: 54px;
-  border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: #000;
-  font-weight: bold;
-  color:#05d5fc;
-  text-shadow:0 0 0.4em #000;
-  -webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition:box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay:  0.2s;
-  transition-delay: 0.2s;
-  box-shadow: 0 2px 5px 0 rgba(5, 213, 252, 0.26);
-}
-
-.button:active{
-  -webkit-transition-delay: 0.s;
-  -moz-transition-delay: 0.s;
-  transition-delay: 0s;
-  box-shadow: 0 8px 17px 0 rgba(5, 213, 252, 0.26);
-}
-
-.main-title--2{
-  opacity:0;
-  display: none;
-}
+  }
 </style>
-  <section class="main-cont" id="home">
-    <div class="cont">
-      <header class="header">
-        <div id="nav-bar">
-          <input class="header_checkbox" type="checkbox"/>
-          <span class="nav-bar_spinner"></span>
-           <span class="nav-bar_spinner"></span>
-            <span class="nav-bar_spinner"></span>
-            <ul class="menu">
-              <li class="menu_item"><a class="menu_link" href="#">Home</a></li>
-              <li class="menu_item"><a class="menu_link" href="#">Product</a></li>
-              <li class="menu_item"><a class="menu_link" href="#">Games</a></li>
-              <li class="menu_item"><a class="menu_link" href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="logo">
-          <img class="logo_main" src="">
-        </div>
-      </header>
-      <div class="main-title">
-        <h1 class="main-title_h1 main-title_h1--2">Made For Reders</h1>
-        <p class="main-title_paragraph main-title_h1_paragraph--2">reading will make you reach your goals</p>
-        <div class="button">Start Reading</div>
-      </div>
+<body>
+<section id="main">
+  <nav>
+    <a href="logo">MYFAIR
+    </a>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Recept</a></li>
+      <li><a href="#">Client</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#" class="hey">say hi!</a>
+  </nav>
+  <div class="content">
+    <div class="model">
+      <img src="menu gailo 1.png">
     </div>
-  </section>
+    <div class="main-text">
+      <h1>QUIT YOUR DAY JOB</h1>
+      <p>START AND BUILD A BUSINESS YOU LOVE</p>
+      <a href="#" class="portfolio-btn">See My Portfolio</a>
+    </div>
+  </div>
+</section>
+<section id="client">
+  <div class="client-heading">
+    <span>Comments</span>
+    <h3>Client's Say</h3>
+  </div>
+  <div class="c-box-container">
+    <div class="client-box">
+      <img src="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p></p>
+      <a href="#">Read more</a>
+    </div>
+  </div>
+   <div class="c-box-container">
+    <div class="client-box">
+      <img src="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p></p>
+      <a href="#">Read more</a>
+    </div>
+  </div> <div class="c-box-container">
+    <div class="client-box">
+      <img src="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p></p>
+      <a href="#">Read more</a>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <img src="gastn 4.png">
+  <h3>Get The Best Books</h3>
+  <div class="contact-input">
+    <input type="email" placeholder="Example@gmail.com"/>
+    <a href="#">Continue</a>
+  </div>
+</section>
 </body>
 </html>
