@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width,intial-scale=1.0">
   <title>my web</title>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <link rel="shortcut icone" href="image/fav-icon.png">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+   <link rel="shortcut icone" href="image/fav-icon.png">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
 </head>
 <style type="text/css">
   @charset "utf-8";
+  @import url('https://fonts.googleapis.com/css?family=open+sans:400,700');
 
   body{
     margin: 0px;
@@ -126,6 +129,41 @@
     background-color: #d6bd60;
     transition:all ease 0.2s;
   }
+  #skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto auto 50px auto;
+  }
+  .skill-text{
+    width: 400px;
+  }
+  .skill-img{
+    width: 600px;
+    height: 600px;
+  }
+  .skill-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .skill-heading span{
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+  .skill-heading h2{
+    color: #d6bd60;
+    font-size: 3.3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;  
+ }
+
+ }
   #recent{
     display: flex;
     justify-content: center;
@@ -284,19 +322,141 @@
     font-weight: 500;
   }
   footer{
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid rgba(232,232,232,0.5);
-    background-color: #ffffff;
+    bottom: 0;
   }
-  footer p{
-    margin: 15px 0px;
-    color: #5f5f5f;
-    font-size: 0.9rem;
+  .footer-dis{
+    background-color: #5f5f5f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font:bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+  }
+  .footer-dis .footer-left,
+  .footer-dis .footer-center,
+  .footer-dis .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .footer-dis .footer-left{
+    width: 30%;
+  }
+  .footer-dis h3{
+    color: #ffffff;
+    font:normal 36px 'cookie',cursive;
+    margin: 0;
+  }
+  .footer-dis h3 span{
+    color: #d6bd60;
+  }
+  .footer-dis .footer-links{
+    color: #ffffff;
+    margin: 20px 0 12px;
+  }
+  .footer-dis .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer-dis .footer-co-name{
+    color: #92999f;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .footer-dis .footer-center{
+    width: 35%;
+  }
+  .footer-dis .footer-center i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 23px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align:middle;
+  }
+  .footer-dis .footer-center i.icon-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-dis .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .footer-dis .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2; 
+  }
+  .footer-dis .footer-center p a{
+    color: #d6bd60;
+    text-decoration: none;
+  }
+   .footer-dis .footer-right{
+    width: 30%;
+  }
+   .footer-dis .footer-about-me{
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .footer-dis .footer-about-me span{
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .footer-dis .footer-icons{
+    margin-top: 25px;
+  }
+  .footer-dis .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
   }
   nav.menu-btn{
     display: none;
   }
+
   @media(max-width: 900px){
     nav{
       justify-content: space-between;
@@ -387,7 +547,17 @@
     text-align: center;
     padding: 0px 15px;
    }
-
+   .footer-dis .footer-left,
+   .footer-dis .footer-center,
+   .footer-dis .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+   }
+   .footer-dis .footer-center i{
+    margin-left: 0;
+   }
   }
   @media(max-width: 720px){
     .model{
@@ -403,12 +573,8 @@
      #contact img{
       height: 200px
      }
-     footer{
-      justify-content: center;
-      padding: 10px 20px;
-     }
-    footer p{
-      text-align: center;
+    footer{
+      position: static;
     }
     .recent-btn{
       margin: 0px;
@@ -430,9 +596,9 @@
       <span class="nav-icon"></span>
     </label>
     <ul class="menu">
-      <li><a href="#home">Home</a></li>
+      <li><a href="#main">Home</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#recept">Recept</a></li>
+      <li><a href="#recent">Recept</a></li>
       <li><a href="#client">Client</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -447,6 +613,17 @@
       <p>START AND BUILD A BUSINESS YOU LOVE</p>
       <a href="#" class="portfolio-btn">See My Portfolio</a>
     </div>
+  </div>
+</section>
+<section id="skills">
+  <div class="skill-text">
+    <div class="skill-heading">
+      <span>My Skills</span>
+      <h2>My Experties</h2>
+    </div>
+  </div>
+  <div class="skills-img">
+    <img src="skills.jpg"/>
   </div>
 </section>
 <section id="recent">
@@ -469,11 +646,11 @@
       <img src="rare.jpg">
 
       <div class="star">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
       </div>
       <p>If you're looking for a teacher,you've come to the right person.</p>
       <a href="#">Read more</a>
@@ -483,11 +660,11 @@
     <div class="client-box">
       <img src="rare.jpg">
       <div class="star">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="far fa-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
       </div>
       <p>If you're looking for a teacher,you've come to the right person.</p>
       <a href="#">Read more</a>
@@ -496,11 +673,11 @@
     <div class="client-box">
       <img src="rare.jpg">
       <div class="star">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="far fa-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
+        <i class="icon-star"></i>
       </div>
       <p>If you're looking for a teacher,you've come to the right person.</p>
       <a href="#">Read more</a>
@@ -515,9 +692,49 @@
     <a href="#">Continue</a>
   </div>
 </section>
-<footer>
-  <p>visit,www.getvalue.co</p>
-  <p>copyright 2021-getvalue</p>
+<footer class="footer-dis">
+  <div class="footer-left">
+    <h3>About <span>Gaston</span></h3>
+    <p class="footer-links">
+      <a href="#main">Home</a>
+      |
+      <a href="#skills">Skills</a>
+      |
+      <a href="#recent">Recept</a>
+      |
+      <a href="#client">Client</a>
+      |
+      <a href="#contact">Contact</a>
+    </p>
+    <p class="footer-co-name">GetValue.</p>
+  </div>
+  <div class="footer-center">
+    <div>
+      <i class="icon-map-marker"></i>
+      <p><span>Dar-es-salaam</span>
+      Posta,Kisutu</p>
+    </div>
+    <div>
+      <i class="icon-phone"></i>
+      <p>071 7568 861</p>
+    </div>
+    <div>
+      <i class="icon-envelope"></i>
+      <p><a href="Example@gmail.com">gastonngailo@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-about-me"><span>About Me</span>
+      I offer training and skill building across Techinology,Management and Humanities.
+    </p>
+    <div class="footer-icons">
+      <a href="#"><i class="icon-facebook"></i></a>
+      <a href="#"><i class="icon-twitter"></i></a>
+      <a href="#"><i class="icon-instagram"></i></a>
+      <a href="#"><i class="icon-linkedin"></i></a>
+      <a href="#"><i class="icon-youtube"></i></a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
