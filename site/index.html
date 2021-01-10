@@ -9,6 +9,11 @@
    <link rel="shortcut icone" href="image/fav-icon.png">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script>
+    function opeanlink(){
+      window.open("view.html");
+    }
+  </script>
   
 </head>
 <style type="text/css"> 
@@ -692,7 +697,7 @@
   <div class="recent-img">
    <img src="pg.png">
   </div>
- <a href="file:///C:/Users/gaston/shiv/site/view.html" class="recent-btn">View Book</a>
+ <a href="view.html" value="open window" onclick="openwin()" class="recent-btn">View Book</a>
 </section>
 <section id="client">
   <div class="client-heading">
@@ -710,24 +715,9 @@
         <i class="icon-star"></i>
         <i class="icon-star"></i>
       </div>
-      <p>If you're looking for a teacher,you've come to the right person.</p>
-      <p> <a onclick="javascript:ShowHide('hiddendiv')">Read more</a></p> 
-      <div class="mid" id="hiddendiv" style="display: none;"><font face="arial" size="4" color="#747474" align="right"> Proven success in leveraging educational theories and methodologies   to design, develop, and deliver successful training programs and integrate instructional technology to provide onsite and online virtual training. Expert at organizing and facilitating management and team building training programs and activities</div>
-        <script type="text/javascript">
-          function ShowHide(divId)
-          {
-            if(document.getElementById(divId).style.display=='none')
-          {
-            document.getElementById(divId).style.display='block';
-          }
-          else
-          {
-            document.getElementById(divId).style.display='none'
-          }
-          }
-        </script>
+     <p>If you're looking for a teacher,you've come to the right person.  <span id="dots">... <br></span> <span id="more">He is highly motivated entrepreneur and corporate employees trainer.</span></p>
+        <p><a onclick="myFunction()" id="myBtn">Read more</a></p>
     </div>
-  </div>
    <div class="c-box-container">
     <div class="client-box">
       <img src="rare.jpg">
@@ -738,26 +728,8 @@
         <i class="icon-star"></i>
         <i class="icon-star"></i>
       </div>
-      <p>If you're looking for a teacher,you've come to the right person.  <span id="dots">... <br></span> <span id="more">He is highly motivated entrepreneur and corporate employees traine.</span></p>
+      <p>If you're looking for a teacher,you've come to the right person.  <span id="dots">... <br></span> <span id="more">He is highly motivated entrepreneur and corporate employees trainer.</span></p>
         <p><a onclick="myFunction()" id="myBtn">Read more</a></p>
-        <script>
-          function myFunction()
-          {
-            var dots=document.getElementById("dots");
-            var moreText=document.getElementById("more");
-            var myBtn=document.getElementById("myBtn");
-            if (dots.style.display=== "none"){
-              dots.style.display= "inline";
-              btnText.innerHTML= "Read more";
-              moreText.style.display="none";
-            }
-          else{
-            dots.style.display= "none";
-            btnText.innerHTML= "Read less";
-            moreText.style.display="inline";
-           }
-          }
-        </script>
     </div>
   </div> <div class="c-box-container">
     <div class="client-box">
@@ -769,24 +741,9 @@
         <i class="icon-star"></i>
         <i class="icon-star"></i>
       </div>
-      <p>If you're looking for a teacher,you've come to the right person.</p>
-      <p> <a onclick="javascript:ShowHide('hiddendiv2')">Read more</a></p> 
-      <div class="mon" id="hiddendiv2" style="display: none;"><font face="arial" size="4" color="#747474" align="right">I am highly motivated entrepreneur and corporate employees trainer with experience in training small and large groups across diverse industries.</div>
-        <script type="text/javascript">
-          function ShowHide(divId)
-          {
-            if(document.getElementById(divId).style.display=='none')
-          {
-            document.getElementById(divId).style.display='block';
-          }
-          else
-          {
-            document.getElementById(divId).style.display='none'
-          }
-          }
-        </script>
+      <p>If you're looking for a teacher,you've come to the right person.  <span id="dots">... <br></span> <span id="more">He is highly motivated entrepreneur and corporate employees trainer.</span></p>
+        <p><a onclick="myFunction()" id="myBtn">Read more</a></p>
     </div>
-  </div>
 </section>
 <section id="contact">
   <img src="gastn 4.png">
